@@ -1,0 +1,80 @@
+# CMake generated files and directories
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+CMakeUserPresets.json
+CMakePresets.json
+
+# Build directories (common names)
+build/
+build-*/
+out/
+debug/
+release/
+*/build/
+*/*build/ # For build dirs inside project subdirs if not using a top-level build
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lib
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+* # If executables have no extension
+
+# User-specific files
+*.user
+*.suo
+*.tlog
+
+# IDE-specific files
+.vscode/
+.idea/
+*.DS_Store
+.project
+.classpath
+.cproject
+*.creator
+*.creator.user
+
+# Backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Packaging
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+_CPack_Packages/
+
+# Mac specific
+.DS_Store
+*.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
