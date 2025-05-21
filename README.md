@@ -25,8 +25,14 @@ The projects progress from basic to more advanced CMake concepts.
 5.  **JsonParserProject** (Current / Next):
     * A program that uses an external JSON library (nlohmann/json).
     * Focuses on learning `WorkspaceContent` or `find_package` for managing external dependencies.
+6.  **UnitTestDemo**:
+    * Integrates the Google Test framework for unit testing a simple C++ library.
+    * Demonstrates fetching a test framework (Google Test) via `WorkspaceContent`, using `enable_testing()`, `add_executable()` for test runners, `target_link_libraries()` for tests, and `add_test()` to register tests with CTest.
 
-*(More projects to be added)*
+### 🔵 Advanced Projects
+
+*(Coming soon. Projects will focus on topics like cross-platform builds, install rules, CPack for packaging, configuration files, and more complex dependency management.)*
+
 
 ## Structure
 
@@ -46,3 +52,13 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
+```
+
+# Run tests
+For projects with tests (like UnitTestDemo), you can run tests from the build directory using:
+
+```bash
+ctest
+# or for more details:
+ctest -V
+```
