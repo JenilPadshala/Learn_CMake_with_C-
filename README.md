@@ -5,18 +5,32 @@ The projects progress from basic to more advanced CMake concepts.
 
 ## Projects
 
-Currently, this repository includes:
+### 🟢 Beginner Projects
 
-1.  **HelloCMake**: A basic "Hello World" C++ program compiled with CMake. Demonstrates `add_executable`.
-2.  **MathProject**: A simple static library (libmath) linked to a main program. Demonstrates `add_library`, `target_link_libraries`, and `target_include_directories`.
-3.  **ModularProgram**: A small program with multiple `.cpp` and `.h` files organized into `src/` and `include/` folders. Demonstrates handling multiple source files for an executable and managing include paths.
+1.  **HelloCMake**:
+    * A basic "Hello World" C++ program compiled with CMake.
+    * Demonstrates `add_executable`.
+2.  **MathProject**:
+    * A simple static library (libmath) linked to a main program.
+    * Demonstrates `add_library`, `target_link_libraries`, and `target_include_directories`.
+3.  **ModularProgram**:
+    * A small program with multiple `.cpp` and `.h` files organized into `src/` and `include/` folders.
+    * Demonstrates handling multiple source files for an executable and managing include paths.
+
+### 🟡 Intermediate Projects
+
+4.  **FileCompressionTool**:
+    * A tool using Run-Length Encoding, structured with a library and an executable.
+    * Demonstrates `add_subdirectory()` for modular builds and inter-directory dependencies.
+5.  **JsonParserProject** (Current / Next):
+    * A program that uses an external JSON library (nlohmann/json).
+    * Focuses on learning `WorkspaceContent` or `find_package` for managing external dependencies.
+
+*(More projects to be added)*
 
 ## Structure
 
-Each project is contained in its own subdirectory:
--   `HelloCMake/`
--   `MathProject/`
--   `ModularProgram/`
+Each project is contained in its own subdirectory within this repository (e.g., `HelloCMake/`, `MathProject/`, etc.).
 
 Each project typically uses an out-of-source build pattern, with build artifacts generated in a `build/` subdirectory within each project's folder.
 
@@ -25,6 +39,9 @@ Each project typically uses an out-of-source build pattern, with build artifacts
 Navigate into a specific project's directory, then:
 
 ```bash
+# Ensure you are in the specific project's root directory
+# e.g., cd JsonParserProject
+
 mkdir build
 cd build
 cmake ..
